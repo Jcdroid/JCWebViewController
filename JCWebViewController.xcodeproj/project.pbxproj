@@ -1,0 +1,528 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4FA0FFBA1DB75FDE00BC0DEF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FA0FFB91DB75FDE00BC0DEF /* main.m */; };
+		4FA0FFBD1DB75FDE00BC0DEF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FA0FFBC1DB75FDE00BC0DEF /* AppDelegate.m */; };
+		4FA0FFC51DB75FDE00BC0DEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FA0FFC41DB75FDE00BC0DEF /* Assets.xcassets */; };
+		4FA0FFD31DB75FDF00BC0DEF /* JCWebViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FA0FFD21DB75FDF00BC0DEF /* JCWebViewControllerTests.m */; };
+		4FA0FFDE1DB75FDF00BC0DEF /* JCWebViewControllerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FA0FFDD1DB75FDF00BC0DEF /* JCWebViewControllerUITests.m */; };
+		4FA0FFF21DB7608500BC0DEF /* JCWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FA0FFF11DB7608500BC0DEF /* JCWebViewController.m */; };
+		4FA0FFF51DB760D900BC0DEF /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FA0FFF41DB760D900BC0DEF /* HomeViewController.m */; };
+		4FA0FFFC1DB863D900BC0DEF /* JCNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FA0FFFB1DB863D900BC0DEF /* JCNavigationController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4FA0FFCF1DB75FDF00BC0DEF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4FA0FFAD1DB75FDE00BC0DEF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4FA0FFB41DB75FDE00BC0DEF;
+			remoteInfo = JCWebViewController;
+		};
+		4FA0FFDA1DB75FDF00BC0DEF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4FA0FFAD1DB75FDE00BC0DEF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4FA0FFB41DB75FDE00BC0DEF;
+			remoteInfo = JCWebViewController;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4FA0FFB51DB75FDE00BC0DEF /* JCWebViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JCWebViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FA0FFB91DB75FDE00BC0DEF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4FA0FFBB1DB75FDE00BC0DEF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4FA0FFBC1DB75FDE00BC0DEF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4FA0FFC41DB75FDE00BC0DEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4FA0FFC91DB75FDE00BC0DEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4FA0FFCE1DB75FDF00BC0DEF /* JCWebViewControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JCWebViewControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FA0FFD21DB75FDF00BC0DEF /* JCWebViewControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCWebViewControllerTests.m; sourceTree = "<group>"; };
+		4FA0FFD41DB75FDF00BC0DEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4FA0FFD91DB75FDF00BC0DEF /* JCWebViewControllerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JCWebViewControllerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FA0FFDD1DB75FDF00BC0DEF /* JCWebViewControllerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCWebViewControllerUITests.m; sourceTree = "<group>"; };
+		4FA0FFDF1DB75FDF00BC0DEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4FA0FFF01DB7608500BC0DEF /* JCWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCWebViewController.h; sourceTree = "<group>"; };
+		4FA0FFF11DB7608500BC0DEF /* JCWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCWebViewController.m; sourceTree = "<group>"; };
+		4FA0FFF31DB760D900BC0DEF /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		4FA0FFF41DB760D900BC0DEF /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		4FA0FFFA1DB863D900BC0DEF /* JCNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCNavigationController.h; sourceTree = "<group>"; };
+		4FA0FFFB1DB863D900BC0DEF /* JCNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCNavigationController.m; sourceTree = "<group>"; };
+		4FA0FFFD1DB863F300BC0DEF /* JCNavigationControllerShouldPopProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCNavigationControllerShouldPopProtocol.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4FA0FFB21DB75FDE00BC0DEF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FA0FFCB1DB75FDF00BC0DEF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FA0FFD61DB75FDF00BC0DEF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4FA0FFAC1DB75FDE00BC0DEF = {
+			isa = PBXGroup;
+			children = (
+				4FA0FFB71DB75FDE00BC0DEF /* JCWebViewController */,
+				4FA0FFD11DB75FDF00BC0DEF /* JCWebViewControllerTests */,
+				4FA0FFDC1DB75FDF00BC0DEF /* JCWebViewControllerUITests */,
+				4FA0FFB61DB75FDE00BC0DEF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4FA0FFB61DB75FDE00BC0DEF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4FA0FFB51DB75FDE00BC0DEF /* JCWebViewController.app */,
+				4FA0FFCE1DB75FDF00BC0DEF /* JCWebViewControllerTests.xctest */,
+				4FA0FFD91DB75FDF00BC0DEF /* JCWebViewControllerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4FA0FFB71DB75FDE00BC0DEF /* JCWebViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4FA0FFBB1DB75FDE00BC0DEF /* AppDelegate.h */,
+				4FA0FFBC1DB75FDE00BC0DEF /* AppDelegate.m */,
+				4FA0FFF31DB760D900BC0DEF /* HomeViewController.h */,
+				4FA0FFF41DB760D900BC0DEF /* HomeViewController.m */,
+				4FA0FFEF1DB7608500BC0DEF /* JCWebViewController */,
+				4FA0FFC41DB75FDE00BC0DEF /* Assets.xcassets */,
+				4FA0FFC91DB75FDE00BC0DEF /* Info.plist */,
+				4FA0FFB81DB75FDE00BC0DEF /* Supporting Files */,
+			);
+			path = JCWebViewController;
+			sourceTree = "<group>";
+		};
+		4FA0FFB81DB75FDE00BC0DEF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4FA0FFB91DB75FDE00BC0DEF /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4FA0FFD11DB75FDF00BC0DEF /* JCWebViewControllerTests */ = {
+			isa = PBXGroup;
+			children = (
+				4FA0FFD21DB75FDF00BC0DEF /* JCWebViewControllerTests.m */,
+				4FA0FFD41DB75FDF00BC0DEF /* Info.plist */,
+			);
+			path = JCWebViewControllerTests;
+			sourceTree = "<group>";
+		};
+		4FA0FFDC1DB75FDF00BC0DEF /* JCWebViewControllerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4FA0FFDD1DB75FDF00BC0DEF /* JCWebViewControllerUITests.m */,
+				4FA0FFDF1DB75FDF00BC0DEF /* Info.plist */,
+			);
+			path = JCWebViewControllerUITests;
+			sourceTree = "<group>";
+		};
+		4FA0FFEF1DB7608500BC0DEF /* JCWebViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4FA0FFFD1DB863F300BC0DEF /* JCNavigationControllerShouldPopProtocol.h */,
+				4FA0FFFA1DB863D900BC0DEF /* JCNavigationController.h */,
+				4FA0FFFB1DB863D900BC0DEF /* JCNavigationController.m */,
+				4FA0FFF01DB7608500BC0DEF /* JCWebViewController.h */,
+				4FA0FFF11DB7608500BC0DEF /* JCWebViewController.m */,
+			);
+			path = JCWebViewController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4FA0FFB41DB75FDE00BC0DEF /* JCWebViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4FA0FFE21DB75FDF00BC0DEF /* Build configuration list for PBXNativeTarget "JCWebViewController" */;
+			buildPhases = (
+				4FA0FFB11DB75FDE00BC0DEF /* Sources */,
+				4FA0FFB21DB75FDE00BC0DEF /* Frameworks */,
+				4FA0FFB31DB75FDE00BC0DEF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JCWebViewController;
+			productName = JCWebViewController;
+			productReference = 4FA0FFB51DB75FDE00BC0DEF /* JCWebViewController.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4FA0FFCD1DB75FDF00BC0DEF /* JCWebViewControllerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4FA0FFE51DB75FDF00BC0DEF /* Build configuration list for PBXNativeTarget "JCWebViewControllerTests" */;
+			buildPhases = (
+				4FA0FFCA1DB75FDF00BC0DEF /* Sources */,
+				4FA0FFCB1DB75FDF00BC0DEF /* Frameworks */,
+				4FA0FFCC1DB75FDF00BC0DEF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4FA0FFD01DB75FDF00BC0DEF /* PBXTargetDependency */,
+			);
+			name = JCWebViewControllerTests;
+			productName = JCWebViewControllerTests;
+			productReference = 4FA0FFCE1DB75FDF00BC0DEF /* JCWebViewControllerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4FA0FFD81DB75FDF00BC0DEF /* JCWebViewControllerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4FA0FFE81DB75FDF00BC0DEF /* Build configuration list for PBXNativeTarget "JCWebViewControllerUITests" */;
+			buildPhases = (
+				4FA0FFD51DB75FDF00BC0DEF /* Sources */,
+				4FA0FFD61DB75FDF00BC0DEF /* Frameworks */,
+				4FA0FFD71DB75FDF00BC0DEF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4FA0FFDB1DB75FDF00BC0DEF /* PBXTargetDependency */,
+			);
+			name = JCWebViewControllerUITests;
+			productName = JCWebViewControllerUITests;
+			productReference = 4FA0FFD91DB75FDF00BC0DEF /* JCWebViewControllerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4FA0FFAD1DB75FDE00BC0DEF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = jcdroid;
+				TargetAttributes = {
+					4FA0FFB41DB75FDE00BC0DEF = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = JLJW949Z96;
+						ProvisioningStyle = Automatic;
+					};
+					4FA0FFCD1DB75FDF00BC0DEF = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 4FA0FFB41DB75FDE00BC0DEF;
+					};
+					4FA0FFD81DB75FDF00BC0DEF = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 4FA0FFB41DB75FDE00BC0DEF;
+					};
+				};
+			};
+			buildConfigurationList = 4FA0FFB01DB75FDE00BC0DEF /* Build configuration list for PBXProject "JCWebViewController" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4FA0FFAC1DB75FDE00BC0DEF;
+			productRefGroup = 4FA0FFB61DB75FDE00BC0DEF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4FA0FFB41DB75FDE00BC0DEF /* JCWebViewController */,
+				4FA0FFCD1DB75FDF00BC0DEF /* JCWebViewControllerTests */,
+				4FA0FFD81DB75FDF00BC0DEF /* JCWebViewControllerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4FA0FFB31DB75FDE00BC0DEF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FA0FFC51DB75FDE00BC0DEF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FA0FFCC1DB75FDF00BC0DEF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FA0FFD71DB75FDF00BC0DEF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4FA0FFB11DB75FDE00BC0DEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FA0FFBD1DB75FDE00BC0DEF /* AppDelegate.m in Sources */,
+				4FA0FFFC1DB863D900BC0DEF /* JCNavigationController.m in Sources */,
+				4FA0FFF21DB7608500BC0DEF /* JCWebViewController.m in Sources */,
+				4FA0FFBA1DB75FDE00BC0DEF /* main.m in Sources */,
+				4FA0FFF51DB760D900BC0DEF /* HomeViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FA0FFCA1DB75FDF00BC0DEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FA0FFD31DB75FDF00BC0DEF /* JCWebViewControllerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FA0FFD51DB75FDF00BC0DEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FA0FFDE1DB75FDF00BC0DEF /* JCWebViewControllerUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4FA0FFD01DB75FDF00BC0DEF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4FA0FFB41DB75FDE00BC0DEF /* JCWebViewController */;
+			targetProxy = 4FA0FFCF1DB75FDF00BC0DEF /* PBXContainerItemProxy */;
+		};
+		4FA0FFDB1DB75FDF00BC0DEF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4FA0FFB41DB75FDE00BC0DEF /* JCWebViewController */;
+			targetProxy = 4FA0FFDA1DB75FDF00BC0DEF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4FA0FFE01DB75FDF00BC0DEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4FA0FFE11DB75FDF00BC0DEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4FA0FFE31DB75FDF00BC0DEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = JLJW949Z96;
+				INFOPLIST_FILE = JCWebViewController/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jcdroid.JCWebViewController;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4FA0FFE41DB75FDF00BC0DEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = JLJW949Z96;
+				INFOPLIST_FILE = JCWebViewController/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jcdroid.JCWebViewController;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		4FA0FFE61DB75FDF00BC0DEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = JCWebViewControllerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jcdroid.JCWebViewControllerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JCWebViewController.app/JCWebViewController";
+			};
+			name = Debug;
+		};
+		4FA0FFE71DB75FDF00BC0DEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = JCWebViewControllerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jcdroid.JCWebViewControllerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JCWebViewController.app/JCWebViewController";
+			};
+			name = Release;
+		};
+		4FA0FFE91DB75FDF00BC0DEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = JCWebViewControllerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jcdroid.JCWebViewControllerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = JCWebViewController;
+			};
+			name = Debug;
+		};
+		4FA0FFEA1DB75FDF00BC0DEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = JCWebViewControllerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jcdroid.JCWebViewControllerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = JCWebViewController;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4FA0FFB01DB75FDE00BC0DEF /* Build configuration list for PBXProject "JCWebViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FA0FFE01DB75FDF00BC0DEF /* Debug */,
+				4FA0FFE11DB75FDF00BC0DEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4FA0FFE21DB75FDF00BC0DEF /* Build configuration list for PBXNativeTarget "JCWebViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FA0FFE31DB75FDF00BC0DEF /* Debug */,
+				4FA0FFE41DB75FDF00BC0DEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4FA0FFE51DB75FDF00BC0DEF /* Build configuration list for PBXNativeTarget "JCWebViewControllerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FA0FFE61DB75FDF00BC0DEF /* Debug */,
+				4FA0FFE71DB75FDF00BC0DEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4FA0FFE81DB75FDF00BC0DEF /* Build configuration list for PBXNativeTarget "JCWebViewControllerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FA0FFE91DB75FDF00BC0DEF /* Debug */,
+				4FA0FFEA1DB75FDF00BC0DEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4FA0FFAD1DB75FDE00BC0DEF /* Project object */;
+}

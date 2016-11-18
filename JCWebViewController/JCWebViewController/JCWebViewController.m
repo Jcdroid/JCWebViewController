@@ -142,7 +142,7 @@
 
 - (UIBarButtonItem *)closeItem {
     if(!_closeItem) {
-        _closeItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemStop target:self action:@selector(closeWebVC:)];
+        _closeItem = [[UIBarButtonItem alloc] initWithTitle:@"关闭" style:UIBarButtonItemStylePlain target:self action:@selector(closeWebVC:)];
     }
     return _closeItem;
 }

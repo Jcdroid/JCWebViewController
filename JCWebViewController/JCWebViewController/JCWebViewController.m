@@ -8,6 +8,7 @@
 
 #import "JCWebViewController.h"
 #import "JCNavigationControllerShouldPopProtocol.h"
+#import "UIView+JCAdd.m"
 
 @interface JCWebViewController () <UIWebViewDelegate, JCNavigationControllerShouldPopProtocol>
 
@@ -16,6 +17,12 @@
 @property (strong, nonatomic) NSURLRequest *request;
 
 @property (strong, nonatomic) UIBarButtonItem *closeItem;
+
+@property (strong, nonatomic) UIView *contentView;
+
+@property (strong, nonatomic) UIImageView *imageView;
+
+@property (strong, nonatomic) UIPanGestureRecognizer *panGesture;
 
 @end
 
@@ -34,11 +41,11 @@
     return [self initWithURL:[NSURL URLWithString:urlString]];
 }
 
-- (instancetype)initWithURL:(NSURL*)pageURL {
+- (instancetype)initWithURL:(NSURL *)pageURL {
     return [self initWithURLRequest:[NSURLRequest requestWithURL:pageURL]];
 }
 
-- (instancetype)initWithURLRequest:(NSURLRequest*)request {
+- (instancetype)initWithURLRequest:(NSURLRequest *)request {
     self = [super init];
     if (self) {
         self.request = request;
@@ -46,19 +53,23 @@
     return self;
 }
 
-- (void)loadRequest:(NSURLRequest*)request {
+- (void)loadRequest:(NSURLRequest *)request {
     [self.webView loadRequest:request];
 }
 
 #pragma mark - View lifecycle
 
 - (void)loadView {
-    self.view  = self.webView;
+    self.view = self.contentView;
+    [self.contentView addSubview:self.imageView];
+    [self.contentView addSubview:self.webView];
     [self loadRequest:self.request];
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [self.webView addGestureRecognizer:self.panGesture];
 }
 
 - (void)viewDidDisappear:(BOOL)animated {
@@ -129,6 +140,23 @@
     [self.navigationController popViewControllerAnimated:YES];
 }
 
+- (void)handlePanGesture:(UIPanGestureRecognizer *)panGesture {
+    
+    self.navigationController.interactivePopGestureRecognizer.enabled = !self.webView.canGoBack;
+    
+    if (panGesture.state == UIGestureRecognizerStateChanged) {
+        CGPoint location = [panGesture locationInView:self.view];
+        CGPoint translation = [panGesture translationInView:self.view];
+        NSLog(@"location = %@\ntranslation = %@", NSStringFromCGPoint(location), NSStringFromCGPoint(translation));
+        
+        if (translation.x > 0) {
+            CGPoint currentCenter = CGPointMake([UIScreen mainScreen].bounds.size.width/2, [UIScreen mainScreen].bounds.size.height/2);
+            currentCenter.x += translation.x;
+            self.webView.center = currentCenter;
+        }
+    }
+}
+
 #pragma mark - getters && setters
 
 - (UIWebView *)webView {
@@ -145,6 +173,28 @@
         _closeItem = [[UIBarButtonItem alloc] initWithTitle:@"关闭" style:UIBarButtonItemStylePlain target:self action:@selector(closeWebVC:)];
     }
     return _closeItem;
+}
+
+- (UIView *)contentView {
+    if(!_contentView) {
+        _contentView = [[UIView alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    }
+    return _contentView;
+}
+
+- (UIImageView *)imageView {
+    if(!_imageView) {
+        _imageView = [[UIImageView alloc] initWithFrame:[UIScreen mainScreen].bounds];
+        _imageView.backgroundColor = [UIColor redColor];
+    }
+    return _imageView;
+}
+
+- (UIPanGestureRecognizer *)panGesture {
+    if(!_panGesture) {
+        _panGesture = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handlePanGesture:)];
+    }
+    return _panGesture;
 }
 
 @end
